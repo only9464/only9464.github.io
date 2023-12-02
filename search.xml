@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>使用版本控制工具Git上传 代码至Github</title>
+      <link href="/2023/12/02/git/"/>
+      <url>/2023/12/02/git/</url>
+      
+        <content type="html"><![CDATA[<p>git add . 添加当前文件夹下面的所有文件到.git文件夹中仓库的缓存区中</p><p>git status                    查看当前状态</p><p>git commit -m “”      引号中添加更新的注释</p><p>git pull                       拉取当前远端文件仓库中的文件，检查是否冲突</p><p>git push                        将更新后的代码上传至远端仓库中去</p><p> git rm –cached  *.docx            删除已经跟踪过的文件，标记为未跟踪</p><ol><li>新建分支<br>首先，在你新建分支之前，你应该在master分支，并且要保证你当前的是最新代码，要不然就是找死，最后提交代码就会出问题。</li></ol><p>git pull origin master ，在master分支下，保证当前代码与线上同步，是最新的<br>git branch &lt;分支名&gt; ，正儿八经的新建分支。<br>git checkout &lt;分支名&gt; ，切换 到新建的分支上，再进行下一步。<br>4. git push origin &lt;分支名&gt; ,把本地分支推到远端，让远端也有一个你的分支，用来后面提交你的代码。<br>新建分支并切换到该分支：git checkout -b &lt;分支名&gt;</p><ol start="2"><li>提交代码<br>在新建的分支上写完代码之后，就可以提交代码了。此时应该在你新建的分支上</li></ol><p>git status ,查看自己写了哪些东西。<br>git add .<br>git commit -m</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux使用kill命令结束进程</title>
+      <link href="/2023/12/02/kill/"/>
+      <url>/2023/12/02/kill/</url>
+      
+        <content type="html"><![CDATA[<p>当使用<code>kill -n</code>命令时，<code>-n</code>后面的数字代表着要发送的特定信号。以下是一些常见的<code>kill -n</code>信号及其对应的作用：</p><ol><li><code>SIGHUP</code> (1) - 终端挂起或断开时发送的信号。</li><li><code>SIGINT</code> (2) - 中断进程，通常由键盘输入 <code>Ctrl + C</code> 发送。</li><li><code>SIGQUIT</code> (3) - 退出进程，通常由键盘输入 <code>Ctrl + \</code> 发送。</li><li><code>SIGILL</code> (4) - 非法指令信号，指示进程执行了非法、未定义或未实现的指令。</li><li><code>SIGKILL</code> (9) - 强制终止进程，不允许进程做清理或善后工作。</li><li><code>SIGTERM</code> (15) - 正常终止进程，允许进程做清理操作。</li><li><code>SIGUSR1</code> (10) - 用户自定义信号1。</li><li><code>SIGUSR2</code> (12) - 用户自定义信号2。</li><li><code>SIGSEGV</code> (11) - 段错误，通常指示进程访问了无法访问的内存区域。</li><li><code>SIGPIPE</code> (13) - 管道破裂，用于在读取已关闭的管道时发送给进程。</li><li><code>SIGALRM</code> (14) - 由定时器发送的信号。</li></ol><p>这些信号允许用户以不同的方式控制进程，从正常终止到强制终止等，以及一些特定的系统事件或用户定义的信号。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
