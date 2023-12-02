@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <title>找色差小游戏</title>
+  <meta name="keywords" content="色觉測試,色弱测试,手机旅游,小游戏">
+  <meta name="description" content="测测你的眼睛对色差的辨识度，所有的色块中有一个方块的颜色有稍微的不同，你要把它挑出来，在一分钟的时间里，看你能通过多少关，16关以下不要再玩手机了！">
+
+  <script type="text/javascript" async="" src="./color.min.js"></script>
+  <link rel="stylesheet" href="m.css">
+</head>
+
+<body>
+  <div class="grid">
+    <div class="page hide" id="room">
+      <div id="box" class="lv1"></div>
+      <header>
+        <span class="lv" style="float:left;margin-left:10px;"> 过关: <em> 0 </em> </span>
+        <span class="time"> </span>
+        <span class="btn btn-pause" style="float:right;margin-right:10px;"> 暂停 </span>
+      </header>
+    </div>
+    <div class="page hide" id="dialog">
+      <div class="inner">
+        <div class="content gameover">
+          <h2 style="font-size:28px;margin:5px;">0关</h2>
+          <p> 你眼睛色差辨识度水平： </p>
+          <h3></h3>
+          <div class="btn-wrap">
+            <button class="btn btn-restart" onclick="location.reload();"> 再玩一次
+            </button>
+            <br>
+            <hr>
+
+            <p style="font-size:16px;">喜欢的话记得收藏一下！没事解解闷也不错哦~~</p>
+          </div>
+
+        </div>
+        <div class="content pause">
+          <h3> 游戏暂停 </h3>
+          <div class="btn-wrap">
+            <button class="btn btn-resume"> 继续 </button>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="page hide" id="index" style="display:block;">
+      <h1 style="padding:0;padding-top:20px;">测测你的眼睛对色差的辨识度</h1>
+      <div id="help">找出所有色块里颜色不同的一个<br>有问题多刷新试试~哎~</div>
+      <div style="bottom:160px;text-align:center;margin-top:20px;"><button data-type="color"
+          class="btn play-btn">开始测试</button></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
