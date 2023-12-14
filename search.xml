@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2023/12/14/kali/"/>
+      <url>/2023/12/14/kali/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/llrraa2010/article/details/129768638">wsl kali 默认root登录</a></p><p>cd C:\Users\God_V\AppData\Local\Microsoft\WindowsApps （似乎可省略）</p><p>kali.exe config –default-user root</p><p><a href="https://blog.xlab.app/p/b3f555e6/#kali">wsl默认启动kali</a></p><p>wsl.exe ~ -d kali-linux</p><p><a href="https://zhuanlan.zhihu.com/p/621873601">将kali-linux移动至其他盘</a></p><p>wsl –export kali-linux F:\Tools\kali-linux.tar</p><p>wsl –unregister kali-linux</p><p>wsl –import kali-linux F:\Tools\kali-linux F:\Tools\kali-linux.tar</p><p><a href="https://developer.aliyun.com/article/1060740">kali-linux换源</a></p><p>sudo vim &#x2F;etc&#x2F;apt&#x2F;sources.list</p><p>插入：</p><p>#中科大</p><p>#deb <a href="http://mirrors.ustc.edu.cn/kali">http://mirrors.ustc.edu.cn/kali</a> kali-rolling main non-free contrib</p><p>#deb-src <a href="http://mirrors.ustc.edu.cn/kali">http://mirrors.ustc.edu.cn/kali</a> kali-rolling main non-free contrib</p><p>#阿里云<br>#deb <a href="http://mirrors.aliyun.com/kali">http://mirrors.aliyun.com/kali</a> kali-rolling main non-free contrib</p><p>#deb-src <a href="http://mirrors.aliyun.com/kali">http://mirrors.aliyun.com/kali</a> kali-rolling main non-free contrib</p><p>#清华大学</p><p>#deb <a href="http://mirrors.tuna.tsinghua.edu.cn/kali">http://mirrors.tuna.tsinghua.edu.cn/kali</a> kali-rolling main contrib non-free</p><p>#deb-src <a href="https://mirrors.tuna.tsinghua.edu.cn/kali">https://mirrors.tuna.tsinghua.edu.cn/kali</a> kali-rolling main contrib non-free</p><p>选一个源，删除注释符号，保存并退出</p><p>sudo apt update</p><p><a href="https://chenzhonzhou.github.io/2021/01/06/kali-an-zhuang-suo-you-gong-ju-bao/">下载工具集everything</a></p><p>sudo apt-get install kali-linux-everything</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用版本控制工具Git上传 代码至Github</title>
       <link href="/2023/12/02/git/"/>
       <url>/2023/12/02/git/</url>
